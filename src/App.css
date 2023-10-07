@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color:white;
+}
+body {
+  background-color: #040D12;
+}
+
+.weather-details > h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.main-imag {
+  height:355px;
+  width: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #183D3D
+  ;
+  margin-left: 17%;
+  margin-top: 7vh;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-radius: 25px;
+  box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 27px 0 rgba(0, 0, 0, 0.19);
+z-index: 999;
+}
+.search {
+  height: 5vh;
+  width: 35vh;
+  border-radius: 25px;
+  margin-top: 2vh;
+  border: none;
+  margin-left: 7vw;
+  padding: 3vh;
+color: white;
+background-color: #040D12;
+}
+
+.search::placeholder {
+  color:white;
+  font-weight: bold;
+}
+.weather-details{
+  margin-top: 4vh;
+  padding-left: 4vh;
+}
+.temp {
+  font-weight: 100;
+  font-size: 80px;
+  text-align: center;
+}
+.more-info-main {
+  height:550px;
+  width: 570px;
+  margin-left: 50%;
+margin-top: -26%;
+border-radius: 25px;
+padding: 3vh;
+box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 27px 0 rgba(0, 0, 0, 0.19);
+padding-left: 3%;
+display: grid;
+grid-template-columns: auto auto;
+grid-template-rows: auto auto;
+row-gap: 2vh;}
+.info-first {
+  height: 200px;
+  width: 200px;
+  background-color: #183D3D;
+  border-radius: 25px;
+  background-image: url("C:\Users\hp\WeatherAPI\weather-app\public\wind.png");
+  background-repeat: no-repeat;
+  background-size:80px;
+  padding-top: 12vh;
+  background-position:left;
+}
+p  {
+  font-weight: 500;
+  margin-left: 100px;
+  width: max-content;
+}
+h3 {
+  margin-left: 90px;
+
+}
+.info-second {
+  height: 200px;
+  width: 200px;
+  background-color: #183D3D;
+  border-radius: 25px;
+  background-image: url("C:\Users\hp\WeatherAPI\weather-app\public\humidity (4).png");
+  background-repeat: no-repeat;
+  background-size:80px;
+  padding-top: 12vh;
+  background-position: 5% 50%; 
+}
+.info-third {
+  height: 200px;
+  width: 210px;
+  background-color: #183D3D;
+  border-radius: 25px;
+  background-image: url("C:\Users\hp\WeatherAPI\weather-app\public\wet.png");
+  background-repeat: no-repeat;
+  background-size:80px;
+  padding-top: 12vh;
+  background-position: 5% 50%; 
+}
+.info-fourth {
+  height: 200px;
+  width: 200px;
+  background-color: #183D3D;
+  border-radius: 25px;
+  background-image: url("C:\Users\hp\WeatherAPI\weather-app\public\barometer (1).png");
+  background-repeat: no-repeat;
+  background-size:80px;
+  padding-top: 12vh;
+  background-position: 5% 50%; 
+}
+.temp-img {
+  background-image: url("C:\Users\hp\WeatherAPI\weather-app\public\weather-app.png");
+  background-repeat: no-repeat;
+  background-size:80px;
+  height: 200px;
+  width: 200px;
+  margin-left: 10vw;
+  margin-top: 2vh;
+}
+.min-temp {
+  height: 70px;
+  width: 400px;
+  background-color: #183D3D;
+  border-radius: 15px;
+  background-image: url("C:\Users\hp\WeatherAPI\weather-app\public\temperature (2).png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-size:60px;
+  margin-top: -15%;
+  padding: 2vh;
+  box-shadow: 0 24px 18px 0 rgba(0, 0, 0, 0.2), 0 26px 27px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-position: 5%;
+}
+.max-temp {
+  height: 70px;
+  width: 400px;
+  background-color: #183D3D;
+  margin-top: 5px;
+  background-image: url("C:\Users\hp\WeatherAPI\weather-app\public\thermometer (2).png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-size:60px;
+  border-radius: 15px;
+  padding: 2vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 27px 0 rgba(0, 0, 0, 0.19);
+  background-position: 5%;
+
+}
+.temp-min-max {
+  text-align: center;
+
+}
+.info-h3 {
+  margin-left: 15vh;
+}
+.info-humidity {
+  margin-left: 17vh;
+
+}
+.wearher-condition {
+  margin-left: 25vh;
+
+}
+@media (max-width:600px) {
+  .main-imag{
+    margin-left: 8%;
+  }
+  .search {
+    margin-left: 16vw;
+  }
+  .more-info-main {
+    margin-top: 27vh;
+    margin-left: 6%;
+   display: flex;
+   flex-wrap:wrap;
+   column-gap: 4px;
+
+  }
+  .temp-img {
+ background-position: 82% 1%;
+  }
+  h3 {
+    font-size: small;
+  }
+  .info-h3 {
+    margin-left: 13vh;
+  }
+  .info-humidity {
+    margin-left: 14vh;
+  
+  }
+  .wearher-condition {
+    margin-left: 20vh;
+  
+  }
+}
+.empty-input {
+  text-align: center;
+  margin-top: 20%;
+}
+
